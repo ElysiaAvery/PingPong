@@ -1,15 +1,15 @@
 //Business Logic
-function pingPong(n) {
-  if (n % 15 === 0) {
+function pingPong(number) {
+  if (number % 15 === 0) {
     return "Ping-Pong";
   }
-  if (n % 3 === 0) {
+  if (number % 3 === 0) {
     return "Ping";
   }
-  if (n % 5 === 0) {
+  if (number % 5 === 0) {
     return "Pong";
   }
-  if (n % 2 === 0) {
+  if (number % 2 === 0) {
     return "Star Trek!"
   }
   return n.toString();
