@@ -15,6 +15,7 @@ Return the word "ping-pong" for numbers divisible by 15 | 30 | Ping-Pong
 Return the word "pong" for numbers divisible by 5 | 10 | Pong
 Return the word "ping" for numbers divisible by 3 | 6 | Ping
 Users should be able to see their new results one after the other | 15, 7 | Ping-Pong, 7
+Prints numbers that count up to the input value | 17 | 1,2,Ping...
 
 ## Setup/Installation Requirements ##
 

@@ -1,7 +1,8 @@
 //Business Logic
 function pingPong(number) {
+  var multiple = [1234567890];
   if (number % 15 === 0) {
-    return "Ping-Pong";
+    return ("Ping-Pong" + );
   }
   if (number % 3 === 0) {
     return "Ping";
@@ -14,6 +15,8 @@ function pingPong(number) {
   }
   return number.toString();
 }
+
+
 for (let i = 1; i <= 1000; i++) {
   console.log(pingPong(i));
 }

@@ -1,6 +1,5 @@
 form {
   padding-right: 4%;
-  /*padding-left: 0%;*/
   margin-right: 5%;
   margin-left: -10%;
   text-align: center;
@@ -31,6 +30,15 @@ ul li {
   list-style: none;
 }
 
+input[type=number] {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 8px 6px;
+  height: 38px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
 #result {
   font-size: 200%;
   text-align: center;
@@ -50,6 +58,21 @@ button {
   border-bottom-left-radius: 50px 50px;
   border-bottom-right-radius: 50px 50px;
   background: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 100%;
+  color: #FFF;
+  float: right;
+  vertical-align: bottom;
+}
+
+#name{
+  color: #FFF;
+  font-size: 150%;
+  float: right;
+  font-family: 'Dancing Script', cursive;
+  vertical-align: bottom;
 }
 
 img {
@@ -73,4 +96,13 @@ img#backg {
     left: 50%;
     margin-left: -512px;
   }
+}
+
+input[type=number] {
+  margin-left: 15%;
+  margin-right: 0px;
+  width: 75%;
+}
+fieldset {
+  padding: 10px;
 }
