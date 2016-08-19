@@ -12,7 +12,7 @@ function pingPong(number) {
   if (number % 2 === 0) {
     return "Star Trek!"
   }
-  return n.toString();
+  return number.toString();
 }
 for (let i = 1; i <= 1000; i++) {
   console.log(pingPong(i));
