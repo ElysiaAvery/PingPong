@@ -9,9 +9,11 @@ function pingPong(n) {
   if (n % 5 === 0) {
     return "Pong";
   }
+  if (n % 2 === 0) {
+    return "Star Trek!"
+  }
   return n.toString();
 }
-
 for (let i = 1; i <= 1000; i++) {
   console.log(pingPong(i));
 }
@@ -23,6 +25,5 @@ $(document).ready(function(){
     var output = pingPong(userInput);
     $("#result").append("<li>"+output+"</li>");
   event.preventDefault();
-
   });
 });
