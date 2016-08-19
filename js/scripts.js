@@ -10,6 +10,7 @@ function Range(end) {
 }
 function PingPong(number) {
   if (number % 15 === 0) {
+    return "Ping-Pong!"
   }
   if (number % 3 === 0) {
     return "Ping";
@@ -25,21 +26,6 @@ function PingPong(number) {
 for (var j = 1; j <= 1000; j++) {
 console.log(PingPong(j));
 }
-// for(i=0; i <100; i++){
-//   var run=[];
-//   run.splice();
-//   if (i%15 == 0) {
-//     return 'Ping-Pong';
-//     run+=1;
-//   } if (i%3 == 0) {
-//     return 'Ping';
-//     run+=1;
-//   } if (i%5 == 0) {
-//     return 'Pong';
-//     run+=1;
-//   } if (!run) {
-//     return(i);
-//   } return('<br>');
   // event.preventDefault();
 
 
@@ -55,5 +41,5 @@ $(document).ready(function(){
     $("#result").empty();
   })
   event.preventDefault();
-});
+})
 });
