@@ -20,6 +20,18 @@ for (let i = 1; i <= 1000; i++) {
 function Range(end) {
   var myArray = [];
   for (var i = 0; i <= end; i += 1) {
+    if (end % 15 === 0) {
+      myArray.splice(end, "Ping-Pong");
+    }
+    else if (end % 3 === 0) {
+      myArray.splice(end, "Ping");
+    }
+    else if (end % 5 === 0) {
+      myArray.splice(end, "Pong");
+    }
+    // else if (end % 2 !== 0) {
+    //   myArray.fill("Star Trek!")
+    // }
     myArray.push(i);
   }
   alert(myArray);
