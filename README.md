@@ -24,7 +24,7 @@ To use this program, you will need:
 
 ## GitHub Pages ##
 
-This survey can be viewed on GitHub Pages [here](https://elysiaavery.github.io/https://github.com/ElysiaAvery/ping-pong/).
+This survey can be viewed on GitHub Pages [here](https://elysiaavery.github.io/https://github.com/ElysiaAvery/PingPong/).
 
 ## Known Bugs ##
 
