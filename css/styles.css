@@ -40,6 +40,7 @@ input[type=number] {
 }
 
 #result {
+  display: none;
   font-size: 200%;
   text-align: center;
 }

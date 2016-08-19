@@ -1,30 +1,29 @@
 //Business Logic
 function Range(end) {
   var myArray = [];
-  for (var i = 0; i <= end; i += 1) {
+  for (var i = 0; i <= end; i ++) {
     myArray.push(i);
   }
   alert(myArray);
-  return myArray
-
+  return myArray;
+}
 function PingPong(number) {
   if (number % 15 === 0) {
-    myArray.unshift("Ping-Pong");
+    return "Ping-Pong";
   }
   if (number % 3 === 0) {
-    return "Ping" + myArray;
+    return "Ping";
   }
   if (number % 5 === 0) {
-    return "Pong" + myArray;
+    return "Pong";
   }
   if (number % 2 === 0) {
-    return "Star Trek!"
+    return "Star Trek!";
   }
   return number.toString();
 }
-for (let i = 1; i <= 1000; i++) {
-  console.log(PingPong(i));
-}
+for (let j = 1; j <= 1000; j++) {
+console.log(PingPong(j));
 }
 
 //Front End Logic
@@ -33,8 +32,11 @@ $(document).ready(function(){
     var userInput = $("input#number").val();
     var output = PingPong(userInput);
     var numberRange = Range(userInput);
-    $("#result").append("<li>"+output+"</li>");
-    $("#result").append("<li>"+numberRange+"</li>");
+    $("#result").append("<li>"+output+"</li>").show();
+    $("#result").append("<li>"+numberRange+"</li>").show();
+    $("#reset").click(function(event) {
+    $("#result").hide();
+  });
   event.preventDefault();
   });
 });
