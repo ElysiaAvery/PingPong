@@ -52,7 +52,7 @@ $(document).ready(function(){
     $("#result").append("<li>"+output+"</li>").show();
     $("#result").append("<li>"+numberRange+"</li>").show();
     $("#reset").click(function(event) {
-    $("#result").hide();
+    $("#result").empty();
   })
   event.preventDefault();
 });
