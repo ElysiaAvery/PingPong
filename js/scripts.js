@@ -1,13 +1,21 @@
 //Business Logic
+function Range(end) {
+  var myArray = [];
+  for (var i = 0; i <= end; i += 1) {
+    myArray.push(i);
+  }
+  alert(myArray);
+  return myArray
+
 function PingPong(number) {
   if (number % 15 === 0) {
-    return "Ping-Pong";
+    myArray.unshift("Ping-Pong");
   }
   if (number % 3 === 0) {
-    return "Ping";
+    return "Ping" + myArray;
   }
   if (number % 5 === 0) {
-    return "Pong";
+    return "Pong" + myArray;
   }
   if (number % 2 === 0) {
     return "Star Trek!"
@@ -17,46 +25,7 @@ function PingPong(number) {
 for (let i = 1; i <= 1000; i++) {
   console.log(PingPong(i));
 }
-function Range(end) {
-  var myArray = [];
-  for (var i = 0; i <= end; i += 1) {
-    if (end % 15 === 0) {
-      myArray.splice(end, "Ping-Pong");
-    }
-    else if (end % 3 === 0) {
-      myArray.splice(end, "Ping");
-    }
-    else if (end % 5 === 0) {
-      myArray.splice(end, "Pong");
-    }
-    // else if (end % 2 !== 0) {
-    //   myArray.fill("Star Trek!")
-    // }
-    myArray.push(i);
-  }
-  alert(myArray);
-  return myArray;
-};
-// console.log(Range(end));{}
-
-// function PingPong(number) {
-//   if (number % 15 === 0) {
-//     return "Ping-Pong";
-//   }
-//   if (number % 3 === 0) {
-//     return "Ping";
-//   }
-//   if (number % 5 === 0) {
-//     return "Pong";
-//   }
-//   if (number % 2 === 0) {
-//     return "Star Trek!"
-//   }
-//   return number.toString();
-// }
-// for (let i = 1; i <= 1000; i++) {
-//   console.log(PingPong(i));
-// }
+}
 
 //Front End Logic
 $(document).ready(function(){
