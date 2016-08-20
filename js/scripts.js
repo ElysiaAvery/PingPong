@@ -1,45 +1,41 @@
 //Business Logic
+var myArray = [];
+var pp = "Ping-Pong!";
+var pi = "Ping!";
+var po = "Pong!";
+var star = "Star Trek!";
 function Range(end) {
-  var myArray = [];
-  myArray.splice()
-  for (var i = 0; i <= end; i ++) {
-    myArray.push(i);
+  for (var i = 1; i <= end; i ++) {
+    if (i % 15 === 0) {
+      myArray.splice(i, 1, pp)
+    }
+    else if (i % 3 === 0) {
+      myArray.splice(i, 1, pi)
+    }
+    else if (i % 5 === 0) {
+      myArray.splice(i, 1, po)
+    }
+    // else if (i % 2 === 0) {
+    //   myArray.push(i, 1, star)
+    // }
+    else {
+      myArray.push(i);
+    }
   }
   alert(myArray);
   return myArray;
 }
-function PingPong(number) {
-  if (number % 15 === 0) {
-    return "Ping-Pong!"
-  }
-  if (number % 3 === 0) {
-    return "Ping";
-  }
-  if (number % 5 === 0) {
-    return "Pong";
-  }
-  if (number % 2 === 0) {
-    return "Star Trek!";
-  }
-  return number.toString();
-}
-for (var j = 1; j <= 1000; j++) {
-console.log(PingPong(j));
-}
-  // event.preventDefault();
 
 
 //Front End Logic
 $(document).ready(function(){
   $("form").submit(function(event){
-    var userInput = $("input#number").val();
-    var output = PingPong(userInput);
+    var userInput = parseInt($("input#number").val());
     var numberRange = Range(userInput);
-    $("#result").append("<li>"+output+"</li>").show();
     $("#result").append("<li>"+numberRange+"</li>").show();
     $("#reset").click(function(event) {
-    $("#result").empty();
-  })
-  event.preventDefault();
-})
+      $("#result").empty();
+    })
+    event.preventDefault();
+  });
 });
