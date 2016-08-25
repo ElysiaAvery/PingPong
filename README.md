@@ -11,11 +11,10 @@ A ping pong game that allows users to input a number that will return the word '
 Input Behavior | Input | Output
 ---------------|-------|--------
 Only accept numbers | Hello! | "error!"
-Return the word "ping-pong" for numbers divisible by 15 | 30 | Ping-Pong
-Return the word "pong" for numbers divisible by 5 | 10 | Pong
-Return the word "ping" for numbers divisible by 3 | 6 | Ping
-Users should be able to see their new results one after the other | 15, 7 | Ping-Pong, 7
-Prints numbers that count up to the input value | 17 | 1,2,Ping...
+Output can count up to provided number. | 2 | [1, 2]
+Output can replace for numbers divisible by 3 | 2 | [1, 2, Ping!]
+Output can replace for numbers divisible by 5 | 5 | [1, 2, Ping!, 4, Pong!]
+Output can replace for numbers divisible by 15 | 5 | [1, 2, Ping!, 4, Pong!, Ping!, 7, 8, 9, Pong!, 11, Ping!, 13, 14, Ping Pong!]
 
 ## Setup/Installation Requirements ##
 
