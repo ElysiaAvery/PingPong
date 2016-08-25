@@ -1,0 +1,112 @@
+form {
+  padding-right: 4%;
+  margin-right: 5%;
+  margin-left: -10%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 650%;
+  font-family: 'Homemade Apple', cursive;
+  color: #FFF;
+  margin: 5%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 300%;
+  font-family: 'Walter Turncoat', cursive;
+  color: #FFF;
+  margin: 5%;
+  text-align: center;
+}
+
+ul li {
+  font-size: 150%;
+  font-family: 'Allerta', sans-serif;
+  color: #FFF;
+  padding: 1.5%;
+  margin: 2.5%;
+  list-style: none;
+}
+
+input[type=number] {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 8px 6px;
+  height: 38px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+#result {
+  display: block;
+  display: none;
+  font-size: 200%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  margin: 2%;
+  padding: 2%;
+}
+
+#transparent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 100%;
+  color: #FFF;
+  float: right;
+  vertical-align: bottom;
+}
+
+#name{
+  color: #FFF;
+  font-size: 150%;
+  float: right;
+  font-family: 'Dancing Script', cursive;
+  vertical-align: bottom;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img#backg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img#backg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+input[type=number] {
+  margin-left: 15%;
+  margin-right: 0px;
+  width: 75%;
+}
+fieldset {
+  padding: 10px;
+}
